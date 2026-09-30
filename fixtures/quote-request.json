@@ -1,0 +1,8 @@
+{
+  "outcome": "yes",
+  "side": "buy",
+  "orderType": "gtc_limit",
+  "quantityBaseUnits": "1000000000000000000",
+  "limitPriceTick": 450,
+  "allowPartialFill": false
+}

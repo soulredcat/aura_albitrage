@@ -1,0 +1,18 @@
+{
+  "name": "aura-hybrid-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts",
+    "demo": "tsx src/main.ts analyze fixtures/hybrid.json",
+    "probe": "tsx src/main.ts probe",
+    "paper": "tsx src/main.ts paper fixtures/paper.json",
+    "status": "tsx src/main.ts status data/hybrid-paper.sqlite",
+    "docs": "node scripts/read-aura-docs.mjs"
+  },
+  "dependencies": { "decimal.js": "10.6.0", "zod": "4.1.12" },
+  "devDependencies": { "@types/node": "22.18.6", "tsx": "4.20.6", "typescript": "5.9.3" }
+}

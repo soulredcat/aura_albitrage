@@ -1,0 +1,28 @@
+{
+  "source": "fixture",
+  "observedAt": "2026-09-30T14:00:00.000Z",
+  "marketId": "example-binary-market",
+  "bookVersion": "1",
+  "tradingStatus": "open",
+  "binaryPayoutVerified": true,
+  "payoutPerPair": "1",
+  "books": {
+    "yes": {"bids": [{"price":"0.43","quantity":"100"}],"asks":[{"price":"0.45","quantity":"100"}]},
+    "no": {"bids": [{"price":"0.49","quantity":"100"}],"asks":[{"price":"0.51","quantity":"100"}]}
+  },
+  "reward": {
+    "adjustedYesMidpoint": "0.47", "maxDistance": "0.10",
+    "minIncentiveQuantity": "10", "multiplier": "1",
+    "qualifiedAt": "2026-09-30T14:00:00.000Z"
+  },
+  "quotes": [
+    {"outcome":"yes","side":"buy","quantity":"10","filledQuantity":"10","totalCostIncludingFees":"4.6125","bookVersion":"1","expiresAt":"2026-09-30T14:00:10.000Z","warnings":[]},
+    {"outcome":"no","side":"buy","quantity":"10","filledQuantity":"10","totalCostIncludingFees":"5.2275","bookVersion":"1","expiresAt":"2026-09-30T14:00:10.000Z","warnings":[]}
+  ],
+  "risk": {
+    "cashAvailable":"100","cashReserve":"20","yesInventory":"0","noInventory":"0",
+    "maxDirectionalShares":"20","maxOrderQuantity":"10","maxTotalSpend":"20",
+    "feeReserveFraction":"0.05","extraPairCost":"0.01","minPairProfit":"0.05",
+    "halfSpread":"0.03","tickSize":"0.01","lotSize":"1","maxAgeMs":5000
+  }
+}
